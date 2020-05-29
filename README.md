@@ -6,7 +6,10 @@ On Irish dataset (uploaded on Irish folder here), this algorithm evalutes: accur
 
 This code is adopted fro NNDL book by Nielson from Chapter 1; the original code is network.py (uploaded here on the the dataset folder.) In this code the target variable (y) of a dataset is assumed to be a vector of the form 'one-hot-vector' representation, which is a list of all 0's with exactly 1 for the target class. For instance, if there were four target classes in the dataset aka multiclass classification problem, and a specific instance's target class was 'three', the target was encoded as [0,0,1,0]. This encoding scheme is known as 'categorical' format. 
 
-<img src = "images/IRISH.png" width = "480" height = "310">
+
+<p align="center">
+<img src = "images/IRISH.png">
+ </p>
 
 On Nielson's code, this script (which is NN_network.py) edits the evakute() function. MSE from Eq. (6), cross-entropy from Eq. (57 or 63) and loglikelihood from Eq. (80). NOTE: on loglikelihood equation 80, the formula is missing 1/n in the begining on Nielson's book. 
 
