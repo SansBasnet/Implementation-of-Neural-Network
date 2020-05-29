@@ -5,11 +5,13 @@ On Irish dataset (uploaded on Irish folder here), this algorithm evalutes: accur
 
 
 This code is adopted fro NNDL book by Nielson from Chapter 1; the original code is network.py (uploaded here on the the dataset folder.) In this code the target variable (y) of a dataset is assumed to be a vector of the form 'one-hot-vector' representation, which is a list of all 0's with exactly 1 for the target class. For instance, if there were four target classes in the dataset aka multiclass classification problem, and a specific instance's target class was 'three', the target was encoded as [0,0,1,0]. This encoding scheme is known as 'categorical' format. 
+<br>
 
 
 <p align="center">
 <img src = "images/IRISH.png">
  </p>
+<br>
 
 On Nielson's code, this script (which is NN_network.py) edits the evakute() function. MSE from Eq. (6), cross-entropy from Eq. (57 or 63) and loglikelihood from Eq. (80). NOTE: on loglikelihood equation 80, the formula is missing 1/n in the begining on Nielson's book. 
 
@@ -19,8 +21,9 @@ NOTE: Each cost function must return a scalar value, not an array.
 
 - For loglikelihood, you have to pick out the activation value of a node for which the target y array has a one - represented by (binarised) 'one-hot-vector'. Provided that you get first obtain the index to the node by calling argmax to the target y and give the index to the output layer's activation array, one would return a probelm -- Numpy's subcript operator returns an array with one element, instead of a scalar. This is because the activation values of a layer are stored in column vectors rather than row. 
 
-
+<p align="center">
 <img src = "images/row_column.png" width = "480" height = "310">
+ </p>
 
 The goal is to generate the following curves of Test versus Train:
 
