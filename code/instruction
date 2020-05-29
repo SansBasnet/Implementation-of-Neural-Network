@@ -1,0 +1,26 @@
+Take the start-up file (start_up_file.ipynb) and add code that implements the requirements below. The aim is to
+add a collection of code snippets that do the following individual tasks in order rather than a coherent program. 
+Check your implementation of Modification 1 (evaluate()), 2a (SGD printing), 2b (SGD return value) and 2c (Early Stopping).  
+Steps are:
+
+First, train the net1 network (already created in the code from "iris-423.dat") with the iris data ("iris.csv") by 
+calling SGD() for a maximum of 100 epochs, minibatch_size=5, eta=0.5.  No specific value should be passed in for 'stopaccuracy' 
+to take the default (1.0). The results should match "Results-1.txt." Create another network by reloading the same 
+saved network and train the network with the same three hyperparameter values AND additionally with stopaccuracy=0.75.  
+The output results will be the same from the previous run, but should stop after the training accuracy reached above 0.75.
+Check your code with a different, deeper network, in particular the 4-20-7-3 network.  Use this network file "iris4-20-7-3.dat".
+Create a new network by loading the saved 4-20-7-3 network, then train the network using the same hyperparameters from
+the last run (epochs=100, minibatch_size=5, eta=0.5, stopaccuracy=0.75). The results should match
+"Results-2.txt."
+
+Preliminary steps:
+
+- Split the dataset randomly into 70% training and 30% test. Shuffle the instances in the original dataset, 
+and take the first 70% as the training and the rest as the test.
+
+- Create a new network with randomly initialized weights of the size [4,20,3].  
+
+- Train the network for 50 epochs with eta = 0.1 and the mini batch size = 5 and take the default for stopaccuracy.  
+
+Use the results to plot two types of plots using matplotlib or whatever package you prefer.  
+
