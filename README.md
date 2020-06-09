@@ -27,6 +27,8 @@ NOTE: Each cost function must return a scalar value, not an array.
 We are also editing the functions SGD() for training_data, at the end of each epoch, and print the resturned results. 
 Collecting the performance results from evaluate() for all epochs for trainin_data and test_data into indovidual lists, and return the two lists in a list. 
 
+The backprop() function has the local variable 'activations' so it is initially allocated with a structure which holds the activation value of all layers in the network from the start instead of starting with just the input layer by "activations = [x]" and appends one layer at a time by "activations.append(activation)". 
+
 First split the dataset randomly into 70% training and 30% test. This script does not call SciKitlearn or other packages but rather is about hard coding. It beings with shuffling the instances in the original dataset, and takes the first 70% as the training and the rest as the test. Then create a new network with randomly initialized weights of the size [4,20,3].  Create a new network by simply calling the constructor as: net4 = network.Network([4,20,3]). Then train the network for 50 epochs with eta = 0.1 and the mini batch size = 5 (and take the default for stopaccuracy).  Save the results.
 
 Test versus Train output should look something like this:
