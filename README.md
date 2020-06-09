@@ -32,6 +32,8 @@ The backprop() function has the local variable 'activations' so it is initially 
 net1 network is trained (from "iris-423.dat") with the iris data ("iris.csv") by calling SGD() for a maximum of 100 epochs, minibatch_size=5, eta=0.5.  No specific value should be passed in for 'stopaccuracy' to take the default (1.0). 
 The results should match with the numbers shown in this file -- "Results-1.txt." Then, create another network by reloading the same saved network and train the network with the same three hyperparameter values AND additionally with stopaccuracy=0.75.  The output results will be the same from the previous run, but should stop after the training accuracy reached above 0.75.
 
+A new network was created by loading the saved 4-20-7-3 network, then train the network using the same hyperparameters from the last run [epochs=100, minibatch_size=5, eta=0.5, stopaccuracy=0.75].  The results should match with the numbers shown in this file -- "Results-2.txt"
+
 This script does not call SciKitlearn or other packages but rather is about hard coding. It beings with shuffling the instances in the original dataset, and takes the first 70% as the training and the rest as the test. Then create a new network with randomly initialized weights of the size [4,20,3].  Create a new network by simply calling the constructor as: net4 = network.Network([4,20,3]). Then train the network for 50 epochs with eta = 0.1 and the mini batch size = 5 (and take the default for stopaccuracy).  Save the results.
 
 Test versus Train output should look something like this:
