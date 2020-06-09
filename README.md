@@ -29,7 +29,7 @@ Collecting the performance results from evaluate() for all epochs for trainin_da
 
 The backprop() function has the local variable 'activations' so it is initially allocated with a structure which holds the activation value of all layers in the network from the start instead of starting with just the input layer by "activations = [x]" and appends one layer at a time by "activations.append(activation)". 
 
-net1 network is trained (from "iris-423.dat") with the iris data ("iris.csv") by calling SGD() for a maximum of 100 epochs, minibatch_size=5, eta=0.5.  No specific value should be passed in for 'stopaccuracy' to take the default (1.0). 
+net1 network is trained [from "iris-423.dat"] with the iris data ["iris.csv"] by calling SGD() for a maximum of 100 epochs, minibatch_size=5, eta=0.5.  No specific value should be passed in for 'stopaccuracy' to take the default (1.0). 
 The results should match with the numbers shown in this file -- "Results-1.txt." Then, create another network by reloading the same saved network and train the network with the same three hyperparameter values AND additionally with stopaccuracy=0.75.  The output results will be the same from the previous run, but should stop after the training accuracy reached above 0.75.
 
 A new network was created by loading the saved 4-20-7-3 network, then train the network using the same hyperparameters from the last run [epochs=100, minibatch_size=5, eta=0.5, stopaccuracy=0.75].  The results should match with the numbers shown in this file -- "Results-2.txt"
@@ -41,9 +41,7 @@ Test versus Train output should look something like this:
 
 <img src = "images/error_cruves.png" width = "480" height = "310">
 <img src = "images/test_v_train.png" width = "480" height = "310">
-
 <img src = "images/test_v_train_1.png" width = "480" height = "310">
-
 <img src = "images/test_v_train_2.png" width = "480" height = "310">
 
 
