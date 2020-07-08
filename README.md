@@ -1,4 +1,4 @@
-# Implementation-of-Neural-Network
+# Implementation of Neural Network
 Implementing Neural Network on Irish dataset 
 
 On Irish dataset (uploaded on data folder here), this algorithm evalutes: accuracy, Mean Squared Error (MSE), Crossentropy and log-likelihood. Followed by that, the function returns those five results that are correctcount, accuracy, MSE, Crossentropy and Loglikelihood in a list.
