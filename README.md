@@ -1,7 +1,7 @@
 # Implementation of Neural Network
 Implementing Neural Network on the infamous Irish dataset. 
 
-On Irish dataset (uploaded on data folder here as well as on https://archive.ics.uci.edu/ml/datasets/iris), this algorithm evalutes: accuracy, Mean Squared Error (MSE), Crossentropy and log-likelihood. Followed by that, the function returns those five results that are correctcount, accuracy, MSE, Crossentropy and Loglikelihood in a list.
+On Irish dataset (uploaded on data folder here as well as on https://archive.ics.uci.edu/ml/datasets/iris), this algorithm evalutes: accuracy, Mean Squared Error (MSE), Crossentropy and log-likelihood. Followed by that, the function returns those five results that are correctcount, accuracy, MSE, Crossentropy and Loglikelihood in a list
 
 
 This code is adopted from NNDL book by Nielson from Chapter 1; the original code is network.py (uploaded here on the the dataset folder.) In this code the target variable (y) of a dataset is assumed to be a vector of the form 'one-hot-vector' representation, which is a list of all 0's with exactly 1 for the target class. For instance, if there were four target classes in the dataset aka multiclass classification problem, and a specific instance's target class was 'three', the target was encoded as [0,0,1,0]. This encoding scheme is known as 'categorical' format. 
