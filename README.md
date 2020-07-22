@@ -14,7 +14,7 @@ This code is adopted from NNDL book by Nielson from Chapter 1; the original code
 
 On Nielson's code, this script (which is NN_network.py) edits the evakute() function. MSE from Eq. (6), cross-entropy from Eq. (57 or 63) and loglikelihood from Eq. (80). NOTE: on loglikelihood equation 80, the formula is missing 1/n in the begining on Nielson's book. 
 
-NOTE: Each cost function must return a scalar value, not an arrays
+NOTE: Each cost function must return a scalar value, not an array.
 
 - For MSE and Cross-entropy look at the two function classes, QuadraticCost and CrossEntropyCost on network2.py file.
 
