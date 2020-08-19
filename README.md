@@ -22,7 +22,7 @@ NOTE: Each cost function must return a scalar value, not an array.
 
 <p align="center">
 <img src = "images/row_column.png">
- </p>
+</p>
 
 We are also editing the functions SGD() for training_data, at the end of each epoch, and print the resturned results. 
 Collecting the performance results from evaluate() for all epochs for trainin_data and test_data into indovidual lists, and return the two lists in a list. 
