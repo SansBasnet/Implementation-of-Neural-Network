@@ -1,4 +1,4 @@
-# Implementation of Neural Network
+# Implementation of Neural Networks
 Implementation of a simple Artificial Neural Network on the infamous Irish dataset. 
 
 On Irish dataset (uploaded on data folder here as well as on https://archive.ics.uci.edu/ml/datasets/iris), this algorithm evalutes: accuracy, Mean Squared Error (MSE), Crossentropy and log-likelihood. Followed by that, the function returns those five results that are correctcount, accuracy, MSE, Crossentropy and Loglikelihood in a list.
